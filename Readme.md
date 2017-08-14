@@ -1,0 +1,2 @@
+
+There is a slight hiccup which I couldn't get past. If you run the file, you will notice that the data after the empty column is being ignored. Code wise, there isn't an issue. This seems to be a problem with the ExcelReader than I used in the code as such. Instead of reading the data it sends a System.DBNull value which isn't expected. Nevertheless, when I replaced the blank cells with a specific string "AAA" for example and change the code accordingly, the program works like a charm.
